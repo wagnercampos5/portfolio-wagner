@@ -1,76 +1,88 @@
-# Portfólio Pessoal - Wagner Campos 🚀
+# 🌐 Portfólio Web — Wagner Campos
 
-Página pessoal desenvolvida para apresentar minha trajetória, competências técnicas, projetos em destaque e canais de contato profissional como **Desenvolvedor Full Stack, Mobile & IA**.
+[![Deploy with GitHub Pages](https://img.shields.io/badge/Deploy-GitHub_Pages-0b6e4f?style=for-the-badge&logo=githubpages&logoColor=white)](https://wagnercampos5.github.io/portfolio-wagner/)
+[![Status](https://img.shields.io/badge/Status-Online-2ea44f?style=for-the-badge)](#)
+[![Stack](https://img.shields.io/badge/Stack-HTML5_%26_CSS3_Puro-0b6e4f?style=for-the-badge&logo=html5&logoColor=white)](#)
 
-🔗 **Link do portfólio no ar:** <https://wagnercampos5.github.io/portfolio-wagner/>
+> Página única (Single-Page) desenvolvida sob medida para consolidação de marca pessoal, apresentação de competências em desenvolvimento Full Stack, Mobile e Inteligência Artificial, e captação de clientes para projetos sob demanda.
 
-## 📌 Sobre o Portfólio
+🔗 **Acesse o portfólio no ar:** [wagnercampos5.github.io/portfolio-wagner](https://wagnercampos5.github.io/portfolio-wagner/)
 
-O objetivo deste site é demonstrar soluções práticas voltadas para resultados comerciais reais, com ênfase em pequenas e médias empresas. A aplicação foi construída utilizando desenvolvimento web puro (*Vanilla*), garantindo carregamento ultrarrápido, alta fidelidade visual e ótima experiência em qualquer dispositivo.
+---
 
-### Principais Destaques:
+## 🎯 Objetivo & Proposta de Valor
 
-* **HTML5 Semântico:** Estruturação pensada em acessibilidade (a11y) e otimização para mecanismos de busca (SEO).
+Diferente de portfólios genéricos com excesso de bibliotecas e dependências pesadas, esta aplicação foi desenhada com foco em **performance pura, carregamento instantâneo e alta taxa de conversão**. 
 
-* **CSS3 Moderno:** Paleta de cores centralizada com variáveis CSS, navegação fixa com `position: sticky` e transições suaves ao interagir com os botões e cartões.
+A estrutura comunica autoridade técnica e visão de negócio, destacando como o desenvolvimento de software resolve dores comerciais para pequenas e médias empresas através de páginas de vendas, catálogos digitais e integrações com automação e IA.
 
-* **Layouts Fluidos:** Utilização de **CSS Grid** e **Flexbox** para acomodar os conteúdos de forma adaptativa.
+---
 
-* **Responsividade:** Regras completas de *Media Queries* adaptadas para navegação em celulares, tablets e computadores.
+## 🎨 Identidade Visual & Design System
 
-## 🛠️ Habilidades & Tecnologias
+A interface gráfica foi concebida com um esquema cromático moderno em tons de menta e verde floresta, transmitindo inovação, clareza e solidez técnica:
 
-* **Front-end:** HTML5 Semântico, CSS3 Moderno, JavaScript, Flexbox, CSS Grid, Design Responsivo e Acessibilidade (a11y).
+* **Paleta de Cores:**
+  * Fundo Primário (`--bg-principal`): `#C7FFDA` (Menta suave)
+  * Cartões & Elementos (`--bg-secundario`): `#FFFFFF` (Branco puro para contraste e legibilidade)
+  * Destaques & Ações (`--destaque`): `#0b6e4f` (Verde esmeralda escuro)
+  * Estado Hover (`--destaque-hover`): `#08523b`
+  * Textos Principais (`--texto-principal`): `#0f291e` (Alto contraste para acessibilidade)
+  * Bordas & Divisores (`--borda`): `#a3e7be`
+* **Tipografia:** Sistema de fontes nativas (`system-ui`, `-apple-system`, `BlinkMacSystemFont`), eliminando requisições externas de web fonts e acelerando a renderização do layout.
+* **Microinterações:**
+  * Efeito de elevação vertical (`translateY(-10px)`) nos cartões de competências e projetos com foco visual na borda ativa.
+  * Transições suaves de cor e preenchimento nos botões primários e secundários.
+  * Barra de navegação com fixação contínua (`position: sticky`) com suporte a rolagem suave (`scroll-behavior: smooth`).
 
-* **Back-end & Dados:** Node.js, Express, Arquitetura de APIs REST, Modelagem de Bancos de Dados SQL e NoSQL.
+---
 
-* **Ferramentas, Cloud & IA:** Git, GitHub, Automação de Fluxos de Trabalho, Agentes Inteligentes, Integrações com APIs de IA e Oracle Cloud Infrastructure (OCI).
+## ⚙️ Destaques de Engenharia Front-end
 
-## 📂 Projetos em Destaque
+* **Zero Dependências (100% Vanilla):** Ausência total de frameworks CSS ou scripts de terceiros, garantindo pontuações máximas em métricas de Core Web Vitals (LCP, FID e CLS).
+* **HTML5 Estritamente Semântico:** Uso correto de tags estruturais (`<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<footer>`) para máxima indexação orgânica (SEO) e compatibilidade com tecnologias assistivas (`a11y`).
+* **Sistemas Modernos de Layout:**
+  * **CSS Grid** com `repeat(auto-fit, minmax(...))` para redistribuição fluida dos cards sem necessidade de dezenas de breakpoints manuais.
+  * **Flexbox** para alinhamento simétrico da barra de navegação, cabeçalho de apresentação (*hero section*) e grupos de botões.
+* **Design Responsivo & Mobile-First:** Adaptação completa de menus, espaçamentos, tipografia e botões para dispositivos móveis abaixo de `768px`.
 
-### 1. Raza13 Tattoo Studio
+---
 
-Landing page moderna focada em conversão para estúdio de tatuagem e piercing, com tema escuro, vitrine de serviços e formulário para orçamentos.
+## 🧭 Arquitetura de Conteúdo
 
-* **Tecnologias:** HTML5, CSS3, CSS Grid, Flexbox
+1. **Header & Navegação:** Identidade visual `<WagnerCampos />` e atalhos rápidos entre as seções.
+2. **Hero Section:** Boas-vindas, proposta de posicionamento e botões de chamada primária para ação (CTAs).
+3. **Sobre Mim:** Apresentação executiva da postura profissional, foco em arquitetura limpa e entrega de valor de negócio.
+4. **Habilidades & Tecnologias:** Matriz técnica categorizada em três pilares fundamentais:
+   * *Front-end* (Semântica, UI moderna, acessibilidade e padrões CSS)
+   * *Back-end & Dados* (Node.js, APIs REST e bancos relacionais/não-relacionais)
+   * *Ferramentas, Cloud & IA* (Git, OCI Cloud, agentes autônomos e automações)
+5. **Vitrine de Projetos:** Cartões independentes contendo escopo do projeto, tecnologias aplicadas e links duplos (código-fonte no GitHub e demonstração ativa):
+   * *Raza13 Tattoo Studio* (Landing page de conversão)
+   * *MarombaFIT* (Vitrine digital e e-commerce display)
+   * *Hub de Links Pessoal* (Agregador de canais estilo Linktree ultra-otimizado)
+6. **Contato & Conversão:** Canais diretos para fechamento de contratos e networking profissional.
 
-* **Código:** [GitHub](https://github.com/wagnercampos5/raza13-landing-page)
+---
 
-* **Demonstração:** [Ver Online](https://wagnercampos5.github.io/raza13-landing-page/)
+## 📂 Estrutura do Repositório
 
-### 2. MarombaFIT
-
-Vitrine digital para suplementação esportiva, estruturada para apresentação de produtos, benefícios de treino e navegação intuitiva.
-
-* **Tecnologias:** HTML5, CSS3, UI/UX, Responsividade
-
-* **Código:** [GitHub](https://github.com/wagnercampos5/projeto-marombafit)
-
-* **Demonstração:** [Ver Online](https://wagnercampos5.github.io/projeto-marombafit/)
-
-### 3. Hub de Links Pessoal
-
-Página agregadora de redes sociais e canais de contato com estilo Linktree, focada em carregamento instantâneo e abordagem *Mobile-First*.
-
-* **Tecnologias:** HTML5, CSS3, Mobile-First
-
-* **Código:** [GitHub](https://github.com/wagnercampos5/projeto-linktree)
-
-* **Demonstração:** [Ver Online](https://wagnercampos5.github.io/projeto-linktree/)
-
-## 📁 Estrutura de Arquivos
-
+```text
+├── index.html        # Estrutura semântica, meta tags, marcação das seções e conteúdo textual
+├── style.css         # Variáveis CSS, reset global, sistema de grids, media queries e efeitos
+└── README.md         # Documentação e especificações técnicas do portfólio
 ```
-├── index.html        # Estrutura semântica e seções do portfólio
-├── style.css         # Estilização, variáveis de cores e media queries
-└── README.md         # Documentação descritiva do projeto
 
-```
+---
 
-## 📬 Contato
+## 📬 Contato & Conexão
 
-Estou disponível para novos projetos, desenvolvimento de sites profissionais e oportunidades de trabalho autônomo ou freelancer.
-
+* **Wagner Campos** — Desenvolvedor Full Stack, Mobile & IA
 * **E-mail:** [wagnercmps20@gmail.com](mailto:wagnercmps20@gmail.com)
-
 * **LinkedIn:** [linkedin.com/in/wagnercampos5](https://linkedin.com/in/wagnercampos5)
+* **WhatsApp:** [Conversar via WhatsApp](https://wa.me/5565999999999)
+* **GitHub:** [@wagnercampos5](https://github.com/wagnercampos5)
+
+---
+
+Desenvolvido por **Wagner Campos**. Focado em performance, código semântico e soluções digitais de alto impacto.
