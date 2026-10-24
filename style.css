@@ -1,0 +1,341 @@
+:root {
+    --bg-principal: #C7FFDA;
+    --bg-secundario: #ffffff;
+    --destaque: #0b6e4f;
+    --destaque-hover: #08523b;
+    --texto-principal: #0f291e;
+    --texto-mutado: #3d5a4c;
+    --borda: #a3e7be;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: var(--bg-principal);
+    color: var(--texto-principal);
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+.cabecalho {
+    background-color: var(--bg-secundario);
+    border-bottom: 2px solid var(--borda);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navegacao {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--destaque);
+    letter-spacing: 1px;
+}
+
+.menu-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.menu-links a {
+    text-decoration: none;
+    color: var(--texto-principal);
+    font-weight: 500;
+    transition: color 0.3;
+}
+
+.menu-links a:hover {
+    color: var(--destaque);
+}
+
+.hero {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 100px 20px 80px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-texto {
+    max-width: 750px;
+}
+
+.saudacao {
+    font-size: 1.1rem;
+    color: var(--destaque);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.hero-texto h1 {
+    font-size: 3rem;
+    color: var(--texto-principal);
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.hero-texto h2 {
+    font-size: 1.6rem;
+    color: var(--texto-mutado);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.hero-texto .descricao {
+    font-size: 1.1rem;
+    color: var(--texto-principal);
+    margin-bottom: 35px;
+}
+
+.hero-botoes {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 26px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+
+.btn-primario {
+    background-color: var(--destaque);
+    color: #ffffff;
+    border: 2px solid var(--destaque);
+}
+
+.btn-primario:hover {
+    background-color: var(--destaque-hover);
+    border-color: var(--destaque-hover);
+}
+
+.btn-secundario {
+    background-color: transparent;
+    color: var(--destaque);
+    border: 2px solid var(--destaque);
+}
+
+.btn-secundario:hover {
+    background-color: var(--destaque);
+    color: #ffffff;
+}
+
+.secao {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+.secao h2 {
+    font-size: 2.2rem;
+    color: var(--destaque);
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.secao h2::after {
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 50px;
+    height: 4px;
+    background-color: var(--texto-principal);
+    border-radius: 2px;
+}
+
+.sobre-conteudo {
+    background-color: var(--bg-secundario);
+    padding: 40px;
+    border-radius: 8px;
+    border: 1px solid var(--borda);
+}
+
+.sobre-conteudo p {
+    font-size: 1.1rem;
+    color: var(--texto-principal);
+    margin-bottom: 20px;
+}
+
+.sobre-conteudo p:last-child {
+    margin-bottom: 0;
+}
+
+.grid-habilidades {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.card-habilidade {
+    background-color: var(--bg-secundario);
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid var(--borda);
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.card-habilidade h3 {
+    font-size: 1.3rem;
+    color: var(--destaque);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.card-habilidade p {
+    font-size: 0.95rem;
+    color: var(--texto-mutado);
+}
+
+.card-habilidade:hover {
+    transform: translateY(-10px);
+    border-color: var(--destaque);
+}
+
+.grid-projetos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.card-projeto {
+    background-color: var(--bg-secundario);
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid var(--borda);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.card-projeto h3 {
+    font-size: 1.4rem;
+    color: var(--destaque);
+    margin-bottom: 12px;
+}
+
+.card-projeto p {
+    font-size: 1rem;
+    color: var(--texto-principal);
+    margin-bottom: 15px;
+}
+
+.tags-tech {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--texto-mutado);
+    letter-spacing: 0.5px;
+    margin-bottom: 25px;
+}
+
+.projeto-links {
+    display: flex;
+    gap: 15px;
+}
+
+.link-projeto {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--destaque);
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s, color 0.3s;
+}
+
+.link-projeto:hover {
+    color: var(--destaque-hover);
+    border-bottom-color: var(--destaque-hover)
+}
+
+.card-projeto:hover {
+    transform: translateY(-10px);
+    border-color: var(--destaque);
+
+}
+
+.contato {
+    text-align: center;
+}
+
+.contato p {
+    max-width: 600px;
+    margin: 0 auto 35px auto;
+    font-size: 1.1rem;
+    color: var(--texto-mutado);
+}
+
+.contato-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.rodape {
+    background-color: var(--bg-secundario);
+    border-top: 2px solid var(--borda);
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.rodape p {
+    font-size: 0.95rem;
+    color: var(--texto-mutado);
+}
+
+@media (max-width: 768px) {
+    .navegacao {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .menu-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 60px 20px 40px 20px;
+        text-align: center;
+    }
+
+    .hero-texto h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-botoes {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .secao {
+        padding: 50px 20px;
+    }
+
+    .secao h2 {
+        font-size: 1.8rem;
+    }
+}
