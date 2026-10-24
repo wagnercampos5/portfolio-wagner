@@ -80,8 +80,6 @@ A interface gráfica foi concebida com um esquema cromático moderno em tons de 
 * **Wagner Campos** — Desenvolvedor Full Stack, Mobile & IA
 * **E-mail:** [wagnercmps20@gmail.com](mailto:wagnercmps20@gmail.com)
 * **LinkedIn:** [linkedin.com/in/wagnercampos5](https://linkedin.com/in/wagnercampos5)
-* **WhatsApp:** [Conversar via WhatsApp](https://wa.me/5565999999999)
-* **GitHub:** [@wagnercampos5](https://github.com/wagnercampos5)
 
 ---
 
